@@ -1,32 +1,99 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;    
 }
 
 .navbar{
     overflow: hidden;
     font-size: 13px;
-    margin: 10px;
+    margin: 12px;
 }
 
 .navbar a{
     float: left;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 12px;
     color: gray;
     text-decoration: none;
 }
 
-.navbar-right{
-    float:right;
+.navbar a:hover{
+    text-decoration: underline;
 }
 
-.parent{
+.align-right{
+    float: right;
+}
+
+.fbar{
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.6em;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.fbar a{
+    color: gray;
+    text-decoration: none;
+    padding: 14px 12px;
+
+}
+
+.fbar a:hover{
+    text-decoration: underline;
+}
+.main{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
     text-align: center;
 }
+
 .center{
     margin: auto;
-    display: block;s
+}
+
+form {
+    display:flex;
+    flex-direction: row;
+    border: 1px solid #dfe1e5;
+    padding: 2px;
+    border-radius: 24px;
+    width: 582px;
+    height: 44px;
+}
+
+button{
+    cursor: pointer;
+}
+
+form button{
+    background: transparent;
+    border: none;
+}
+form button:focus{
+    outline: none;
+}
+input{
+    flex-grow: 2;
+    border: none;
+}
+
+input:focus{
+    outline: none;
 }
 
 
+.buttons{
+    margin-top: 30px;
 
+}
+
+.buttons button{
+    margin: 0px 5px;
+    padding: 10px;
+}
